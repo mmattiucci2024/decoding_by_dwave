@@ -1,5 +1,14 @@
-# DWAVE Decoding a Q Matrix
-# Decoding indexes =  [0, 1, 3, 5]
+#####################################################
+# THIS IS JUST AN EASY EXAMPLE.
+# IT WORKS BUT YOU NEED A DWAVE SUBSCRIPTION AND AN ACTIVE
+# VENV (Virtual Environment) FOR IT TO WORK.
+#####################################################
+# Task:
+# The quantum annealer DWAVE is decoding a matrix Q (dictionary format)
+# that encodes the binary sequence [1, 0, 0, 1].
+# The solution to the QUBO problem for the quadratic form Q
+# is unique and consists of more than 4 bits.
+# Remember that the only decoding indices to consider are [0, 1, 3, 5].
 #
 from dwave.system import DWaveSampler, EmbeddingComposite
 sampler = EmbeddingComposite(DWaveSampler())
